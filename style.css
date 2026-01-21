@@ -1,0 +1,219 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:
+        url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color:#fff;
+}
+
+
+
+span{ color:#83218b; }
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:100px 20px;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background:linear-gradient(135deg,#020617,#020617);
+    text-align:center;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero p{
+    margin:20px 0 30px;
+    color:#cbd5f5;
+}
+
+.section{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.section.dark{
+    background:#020617;
+}
+
+.grid{
+    display:grid;
+    gap:25px;
+    max-width:1100px;
+    margin:40px auto 0;
+}
+
+/* HP (default) → 2 kolom */
+.grid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+}
+
+/* Tablet */
+@media (min-width: 768px){
+    .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Laptop / Desktop */
+@media (min-width: 1024px){
+    .grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+.card{
+    background:#020617;
+    padding:30px;
+    border-radius:16px;
+}
+
+.price-card{
+    background:#020617;
+    padding:35px;
+    border-radius:18px;
+    border:2px solid transparent;
+}
+
+.price-card .btn{
+    width:100%;
+    margin-top:15px;
+    border-radius:12px;
+    padding:14px 0;
+    text-align:center;
+}
+
+.price-card .btn:hover{
+    box-shadow:0 0 15px #83218b(34,197,94,0.6);
+}
+
+
+.price-card.active{
+    border-color: #83218b;
+}
+
+.price{
+    font-size:15px;
+    margin:10px 0;
+    color:#9fdab4;
+}
+
+.old-price{
+    text-decoration: line-through;
+    color:#94a3b8;
+    font-size:1rem;
+}
+
+.discount{
+    display:inline-block;
+    background: #83218b;
+    color:#fff;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:12px;
+    margin-bottom:15px;
+}
+
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    background: #83218b;
+    color:#000;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+    border:none;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background: #83218b;
+}
+
+.cta{
+    padding:80px 20px;
+    background:#020617;
+    text-align:center;
+}
+
+.cta2{
+    padding:80px 20px;
+    text-align:center;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    font-size:14px;
+    color:#94a3b8;
+    background:#020617;
+}
+
+.wa-float{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background: #83218b;
+    color:#000;
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:24px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .hero h1{
+        font-size:2.2rem;
+    }
+}
+
+/* LOGO SECTION */
+.logo-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.logo-bulat {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #83218b; /* warna WhatsApp */
+    margin-bottom: 15px;
+}
+
+.logo-section h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.logo-section p {
+    font-size: 14px;
+    color: #ffffff;
+    max-width: 500px;
+    margin: 0 auto;
+}
